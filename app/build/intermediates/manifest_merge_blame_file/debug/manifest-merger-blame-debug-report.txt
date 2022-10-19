@@ -1,0 +1,108 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.jonys.appdesigner"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.VIBRATE" />
+11-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:5:2-62
+11-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:5:19-60
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:6:2-76
+12-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:6:19-74
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:7:2-77
+13-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:7:19-75
+14
+15    <application
+15-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:9:5-44:19
+16        android:allowBackup="true"
+16-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:10:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.8.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/2647c6f9e207279b3fe6085096ed5274/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+18        android:debuggable="true"
+19        android:extractNativeLibs="false"
+20        android:icon="@mipmap/ic_launcher"
+20-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:11:9-43
+21        android:label="@string/app_name"
+21-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:12:9-41
+22        android:roundIcon="@mipmap/ic_launcher_round"
+22-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:13:9-54
+23        android:supportsRtl="true"
+23-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:14:9-35
+24        android:theme="@style/Theme.AppTheme" >
+24-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:15:9-46
+25        <activity
+25-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:17:9-26:20
+26            android:name="com.jonys.appdesigner.activities.HomeActivity"
+26-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:18:13-52
+27            android:exported="true"
+27-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:20:13-36
+28            android:screenOrientation="portrait" >
+28-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:19:4-40
+29            <intent-filter>
+29-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:21:13-25:29
+30                <action android:name="android.intent.action.MAIN" />
+30-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:22:17-69
+30-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:22:25-66
+31
+32                <category android:name="android.intent.category.LAUNCHER" />
+32-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:24:17-77
+32-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:24:27-74
+33            </intent-filter>
+34        </activity>
+35        <activity
+35-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:28:3-30:42
+36            android:name="com.jonys.appdesigner.activities.EditorActivity"
+36-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:29:4-45
+37            android:screenOrientation="portrait" />
+37-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:30:4-40
+38        <activity
+38-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:32:3-34:42
+39            android:name="com.jonys.appdesigner.activities.XmlPreviewActivity"
+39-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:33:4-49
+40            android:screenOrientation="portrait" />
+40-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:34:4-40
+41        <activity
+41-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:36:3-38:42
+42            android:name="com.jonys.appdesigner.activities.DrawableManagerActivity"
+42-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:37:4-54
+43            android:screenOrientation="portrait" />
+43-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:38:4-40
+44        <activity
+44-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:40:3-42:42
+45            android:name="com.jonys.appdesigner.activities.SettingsActivity"
+45-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:41:4-47
+46            android:screenOrientation="portrait" />
+46-->/storage/emulated/0/AndroidIDEProjects/AppDesigner/app/src/main/AndroidManifest.xml:42:4-40
+47
+48        <provider
+48-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+49            android:name="androidx.startup.InitializationProvider"
+49-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+50            android:authorities="com.jonys.appdesigner.androidx-startup"
+50-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+51            android:exported="false" >
+51-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+52            <meta-data
+52-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+53                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+53-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+54                android:value="androidx.startup" />
+54-->[androidx.emoji2:emoji2:1.2.0] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/26b079249c11a9944b4c8b1c4d789eec/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+55            <meta-data
+55-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/18909d176564d730eb47dfe11aa3d4d9/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+56                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+56-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/18909d176564d730eb47dfe11aa3d4d9/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+57                android:value="androidx.startup" />
+57-->[androidx.lifecycle:lifecycle-process:2.4.1] /data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/18909d176564d730eb47dfe11aa3d4d9/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+58        </provider>
+59    </application>
+60
+61</manifest>

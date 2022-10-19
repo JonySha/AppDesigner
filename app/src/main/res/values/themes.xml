@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AppTheme" parent="Theme.Material3.Light.NoActionBar">
+		<item name="colorAccent">@color/purple</item>
+		
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorOnPrimary">@color/white</item>
+		
+		<item name="android:colorBackground">#ffffff</item>
+		
+		<item name="colorSurface">@color/white</item>
+		<item name="colorOnSurface">@color/black</item>
+		
+		<item name="colorContainer">@color/purple</item>
+		<item name="colorOnContainer">@color/white</item>
+		
+		<item name="android:statusBarColor">?android:attr/colorBackground</item>
+		<item name="android:windowLightStatusBar">true</item>
+		
+		<item name="android:fontFamily">@font/josefinsans_regular</item>
+		
+		<item name="switchStyle">@style/SwitchStyle</item>
+    </style>
+</resources>

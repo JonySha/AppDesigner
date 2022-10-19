@@ -1,0 +1,4 @@
+<resources>
+	<dimen name="cornerLow">8dp</dimen>
+	<dimen name="cornerHigh">16dp</dimen>
+</resources>

@@ -1,0 +1,15 @@
+<resources>
+	<style name="ToolbarButtonStyle">
+		<item name="android:layout_width">35dp</item>
+		<item name="android:layout_height">35dp</item>
+		<item name="android:padding">5dp</item>
+		<item name="android:tint">?attr/colorOnSurface</item>
+		<item name="android:scaleType">fitCenter</item>
+		<item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+	</style>
+	
+	<style name="SwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">
+		<item name="track">@drawable/switch_track</item>
+		<item name="android:thumb">@drawable/switch_thumb</item>
+	</style>
+</resources>

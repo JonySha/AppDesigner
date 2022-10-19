@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+	android:background="?attr/colorSurface">
+    
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp">
+        
+        <TextView
+            android:id="@+id/widget_name"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:text="LinearLayout"
+            android:textColor="@color/black"
+            android:textSize="20sp"/>
+        
+        <ImageButton
+            android:id="@+id/btn_add"
+            style="@style/ToolbarButtonStyle"
+			android:layout_marginLeft="10dp"
+			android:layout_marginRight="10dp"
+            android:src="@drawable/plus"
+            android:tint="?attr/colorPrimary"/>
+        
+        <ImageButton
+            android:id="@+id/btn_delete"
+            style="@style/ToolbarButtonStyle"
+            android:src="@drawable/delete"
+            android:tint="?attr/colorPrimary"/>
+        
+    
+    </LinearLayout>
+    
+    <View
+        android:background="?attr/colorAccent"
+        android:layout_height="1dp"
+        android:layout_width="match_parent"/>
+    
+    <ListView
+        android:id="@+id/listView"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+		android:divider="@null"
+		android:nestedScrollingEnabled="true"/>
+    
+</LinearLayout>

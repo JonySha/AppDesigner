@@ -1,0 +1,18 @@
+<PreferenceScreen
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<PreferenceCategory
+		app:title="Common">
+		
+		<SwitchPreferenceCompat
+			app:key="vibrate"
+			app:title="Enable Vibration"
+			app:summary="May consume battery"
+			app:icon="@drawable/vibrate"
+			app:defaultValue="true"
+			app:singleLineTitle="true"/>
+			
+	</PreferenceCategory>
+		
+</PreferenceScreen>

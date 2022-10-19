@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jonys.appdesigner.app-mergeDebugResources-28:/values-sw360dp-v13/values-sw360dp-v13.xml",
+            "map": [
+                {
+                    "source": "/data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/bd6dcef5988d9ee8a09ae1f4561c949f/transformed/preference-1.1.0/res/values-sw360dp-v13/values-sw360dp-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                }
+            ]
+        }
+    ]
+}
