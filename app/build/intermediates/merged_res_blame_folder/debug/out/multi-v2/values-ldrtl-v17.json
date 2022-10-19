@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.jonys.appdesigner.app-mergeDebugResources-28:/values-ldrtl-v17/values-ldrtl-v17.xml",
+            "map": [
+                {
+                    "source": "/data/data/com.itsaky.androidide/files/home/.gradle/caches/transforms-3/c08f2b355838ff37594c78c377b116ce/transformed/material-1.8.0-alpha01/res/values-ldrtl-v17/values-ldrtl-v17.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,191",
+                        "endColumns": "135,140",
+                        "endOffsets": "186,327"
+                    }
+                }
+            ]
+        }
+    ]
+}

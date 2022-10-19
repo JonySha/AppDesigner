@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/activity_drawable_manager.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/activity_drawable_manager.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/textinputlayout.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/textinputlayout.xml"
+    },
+    {
+        "merged": "com.jonys.appdesigner.app-mergeDebugResources-29:/layout/activity_editor.xml",
+        "source": "com.jonys.appdesigner.app-main-32:/layout/activity_editor.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/defined_attributes_dialog.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/defined_attributes_dialog.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/activity_home.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/activity_home.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/dialog_attribute_size.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/dialog_attribute_size.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/activity_xml_preview.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/activity_xml_preview.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/grid_drawable_item.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/grid_drawable_item.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/defined_attribute_item.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/defined_attribute_item.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/list_view_item.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/list_view_item.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/list_project_item.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/list_project_item.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/activity_editor.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/activity_editor.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/activity_settings.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/activity_settings.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-mergeDebugResources-29:/layout/dialog_attribute_color.xml",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/layout/dialog_attribute_color.xml"
+    }
+]
