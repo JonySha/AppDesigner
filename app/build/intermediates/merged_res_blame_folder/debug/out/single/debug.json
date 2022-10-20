@@ -20,12 +20,12 @@
         "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-merged_res-30:/drawable_menu.xml.flat",
-        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/drawable/menu.xml"
-    },
-    {
         "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-merged_res-30:/drawable_switch_thumb.xml.flat",
         "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/drawable/switch_thumb.xml"
+    },
+    {
+        "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-merged_res-30:/drawable_menu.xml.flat",
+        "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/drawable/menu.xml"
     },
     {
         "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-merged_res-30:/layout_activity_home.xml.flat",
@@ -38,6 +38,10 @@
     {
         "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-merged_res-30:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-main-32:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.jonys.appdesigner.app-merged_res-30:/layout_activity_editor.xml.flat",
+        "source": "com.jonys.appdesigner.app-main-32:/layout/activity_editor.xml"
     },
     {
         "merged": "/data/data/com.itsaky.androidide/files/home/.gradle/daemon/7.4.2/com.jonys.appdesigner.app-merged_res-30:/layout_dialog_attribute_color.xml.flat",

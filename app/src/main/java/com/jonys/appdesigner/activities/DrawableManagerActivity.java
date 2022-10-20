@@ -264,8 +264,9 @@ public class DrawableManagerActivity extends BaseActivity {
 		
 		@Override
 		public void onClick(View v) {
+			DrawableItem item = drawables.get((int) v.getTag());
+				
 			if(isSelectedMode) {
-				DrawableItem item = drawables.get((int) v.getTag());
 				item.selected = !item.selected;
 				
 				ImageView check = v.findViewById(R.id.img_check);
@@ -275,10 +276,17 @@ public class DrawableManagerActivity extends BaseActivity {
 
 		@Override
 		public boolean onLongClick(View v) {
+			DrawableItem item = drawables.get((int) v.getTag());
+				
+			if(item.name.equals("default_image")) {
+				return false;
+			}
+				
 			if(!isSelectedMode) {
-				drawables.get((int) v.getTag()).selected = true;
+				item.selected = true;
 				startSelection();
 			}
+			
 			return true;
 		}
 	}

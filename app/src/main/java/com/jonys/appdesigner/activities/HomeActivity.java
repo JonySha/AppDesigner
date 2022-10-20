@@ -218,6 +218,8 @@ public class HomeActivity extends BaseActivity {
 	private void createProject(String name) {
 		final String projectDir = FileUtil.getPackageDataDir(this) + "/projects/" + name;
 		FileUtil.makeDir(projectDir);
+		FileUtil.makeDir(projectDir + "/drawable/");
+		FileUtil.copyFileFromAsset("default_image.png", projectDir + "/drawable", this);
 		
 		ProjectFile project = new ProjectFile(projectDir);
 		project.saveLayout("");

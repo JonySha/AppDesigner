@@ -24,17 +24,6 @@
 	},
 	
 	{
-		"name" : "RadioGroup",
-		"className" : "com.jonys.appdesigner.editor.widgets.RadioGroupDesign",
-		"iconName" : "ic_radiogroup",
-		"defaultAttributes" :
-		{
-			"android:layout_width" : "match_parent",
-			"android:padding" : "8dp"
-		}
-	},
-	
-	{
 		"name" : "FrameLayout",
 		"className" : "com.jonys.appdesigner.editor.widgets.FrameLayoutDesign",
 		"iconName" : "ic_frame",
@@ -49,6 +38,28 @@
 		"name" : "RelativeLayout",
 		"className" : "com.jonys.appdesigner.editor.widgets.RelativeLayoutDesign",
 		"iconName" : "ic_relative",
+		"defaultAttributes" :
+		{
+			"android:layout_width" : "match_parent",
+			"android:padding" : "8dp"
+		}
+	},
+	
+	{
+		"name" : "ConstraintLayout",
+		"className" : "com.jonys.appdesigner.editor.widgets.ConstraintLayoutDesign",
+		"iconName" : "ic_relative",
+		"defaultAttributes" :
+		{
+			"android:layout_width" : "match_parent",
+			"android:padding" : "8dp"
+		}
+	},
+	
+	{
+		"name" : "RadioGroup",
+		"className" : "com.jonys.appdesigner.editor.widgets.RadioGroupDesign",
+		"iconName" : "ic_radiogroup",
 		"defaultAttributes" :
 		{
 			"android:layout_width" : "match_parent",

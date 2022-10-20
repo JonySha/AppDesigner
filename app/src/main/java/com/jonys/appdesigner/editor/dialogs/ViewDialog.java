@@ -5,19 +5,27 @@ import android.content.Context;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
 import java.util.ArrayList;
 
 import com.jonys.appdesigner.managers.IdManager;
 
 public class ViewDialog extends AttributeDialog {
 	
-	private ArrayList<String> ids;
+	private ArrayList<String> ids = new ArrayList<>();
 	private ListView listview;
 	
-	public ViewDialog(Context context, String savedValue) {
+	private String constant;
+	
+	public ViewDialog(Context context, String savedValue, String constant) {
 		super(context);
+		this.constant = constant;
 		
-		ids = IdManager.getIds();
+		ids.addAll(IdManager.getIds());
+		
+		if(constant != null) {
+			ids.add(0, constant);
+		}
 		
 		listview = new ListView(context);
 		listview.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT));
@@ -40,7 +48,18 @@ public class ViewDialog extends AttributeDialog {
 			listener.onSave("-1");
 		}
 		else {
-			listener.onSave("@id/" + ids.get(listview.getCheckedItemPosition()));
+		//	listener.onSave("@id/" + ids.get(listview.getCheckedItemPosition()));
+			if(constant == null) {
+				listener.onSave("@id/" + ids.get(listview.getCheckedItemPosition()));
+				return;
+			}
+			
+			if(listview.getCheckedItemPosition() > 0) {
+				listener.onSave("@id/" + ids.get(listview.getCheckedItemPosition()));
+			}
+			else {
+				listener.onSave(constant);
+			}
 		}
 	}
 }

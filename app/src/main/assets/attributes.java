@@ -61,30 +61,6 @@
 		},
 		
 		{
-			"name" : "Rotation",
-			"methodName" : "setRotation",
-			"className" : "ViewCaller",
-			"attributeName" : "android:rotation",
-			"argumentType" : "float"
-		},
-		
-		{
-			"name" : "Rotation X",
-			"methodName" : "setRotationX",
-			"className" : "ViewCaller",
-			"attributeName" : "android:rotationX",
-			"argumentType" : "float"
-		},
-		
-		{
-			"name" : "Rotation Y",
-			"methodName" : "setRotationY",
-			"className" : "ViewCaller",
-			"attributeName" : "android:rotationY",
-			"argumentType" : "float"
-		},
-		
-		{
 			"name" : "Padding",
 			"methodName" : "setPadding",
 			"className" : "ViewCaller",
@@ -127,7 +103,74 @@
 			"attributeName" : "android:paddingBottom",
 			"argumentType" : "dimension",
 			"dimensionUnit" : "dp"
-		}
+		},
+		
+		{
+			"name" : "Rotation",
+			"methodName" : "setRotation",
+			"className" : "ViewCaller",
+			"attributeName" : "android:rotation",
+			"argumentType" : "float"
+		},
+		
+		{
+			"name" : "Rotation X",
+			"methodName" : "setRotationX",
+			"className" : "ViewCaller",
+			"attributeName" : "android:rotationX",
+			"argumentType" : "float"
+		},
+		
+		{
+			"name" : "Rotation Y",
+			"methodName" : "setRotationY",
+			"className" : "ViewCaller",
+			"attributeName" : "android:rotationY",
+			"argumentType" : "float"
+		},
+		
+		{
+			"name" : "Translation X",
+			"methodName" : "setTranslationX",
+			"className" : "ViewCaller",
+			"attributeName" : "android:translationX",
+			"argumentType" : "dimension",
+			"dimensionUnit" : "dp"
+		},
+		
+		{
+			"name" : "Translation Y",
+			"methodName" : "setTranslationY",
+			"className" : "ViewCaller",
+			"attributeName" : "android:translationY",
+			"argumentType" : "dimension",
+			"dimensionUnit" : "dp"
+		},
+		
+		{
+			"name" : "Translation Z",
+			"methodName" : "setTranslationZ",
+			"className" : "ViewCaller",
+			"attributeName" : "android:translationZ",
+			"argumentType" : "dimension",
+			"dimensionUnit" : "dp"
+		},
+		
+		{
+			"name" : "Scale X",
+			"methodName" : "setScaleX",
+			"className" : "ViewCaller",
+			"attributeName" : "android:scaleX",
+			"argumentType" : "float"
+		},
+		
+		{
+			"name" : "Scale Y",
+			"methodName" : "setScaleY",
+			"className" : "ViewCaller",
+			"attributeName" : "android:scaleY",
+			"argumentType" : "float"
+		} 
 	],
 	
 	"android.widget.LinearLayout" :
@@ -254,7 +297,7 @@
 	"android.widget.EditText" :
 	[
 		{
-			"name" : "Text Hint",
+			"name" : "Hint",
 			"methodName" : "setTextHint",
 			"className" : "TextViewCaller",
 			"attributeName" : "android:hint",

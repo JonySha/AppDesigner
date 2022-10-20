@@ -313,5 +313,138 @@
 			"argumentType" : "dimension",
 			"dimensionUnit" : "dp"
 		}
+	],
+	
+	"androidx.constraintlayout.widget.ConstraintLayout" :
+	[
+		{
+			"name" : "Layout Constraint Left To Left Of",
+			"methodName" : "setLeftToLeft",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintLeft_toLeftOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Left To Right Of",
+			"methodName" : "setLeftToRight",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintLeft_toRightOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Right To Left Of",
+			"methodName" : "setRightToLeft",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintRight_toLeftOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Right To Right Of",
+			"methodName" : "setRightToRight",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintRight_toRightOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Top To Top Of",
+			"methodName" : "setTopToTop",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintTop_toTopOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Top To Bottom Of",
+			"methodName" : "setTopToBottom",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintTop_toBottomOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Bottom To Top Of",
+			"methodName" : "setBottomToTop",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintBottom_toTopOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Bottom To Bottom Of",
+			"methodName" : "setBottomToBottom",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintBottom_toBottomOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Baseline To Baseline Of",
+			"methodName" : "setBottomToTop",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintBaseline_toBaselineOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Start To Start Of",
+			"methodName" : "setStartToStart",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintStart_toStartOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint Start To End Of",
+			"methodName" : "setStartToEnd",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintStart_toEndOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint End To Start Of",
+			"methodName" : "setEndToStart",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintEnd_toStartOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		},
+		
+		{
+			"name" : "Layout Constraint End To End Of",
+			"methodName" : "setEndToEnd",
+			"className" : "ConstraintLayoutCaller",
+			"attributeName": "app:layout_constraintEnd_toEndOf",
+			"argumentType" : "view",
+			"constant" : "parent",
+			"defaultValue" : "-1"
+		}
 	]
 }

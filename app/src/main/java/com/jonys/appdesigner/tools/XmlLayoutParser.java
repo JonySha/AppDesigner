@@ -108,8 +108,10 @@ public class XmlLayoutParser {
 		for(View view : viewAttributeMap.keySet()) {
 			AttributeMap map = viewAttributeMap.get(view);
 			
-			if(map.contains("android:id")) {
-				IdManager.addNewId(view, map.getValue("android:id"));
+			for(String key : map.keySet()) {
+				if(key.equals("android:id")) {
+					IdManager.addNewId(view, map.getValue("android:id"));
+				}
 			}
 		}
 		

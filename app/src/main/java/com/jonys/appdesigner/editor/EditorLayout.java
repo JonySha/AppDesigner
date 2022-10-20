@@ -507,7 +507,7 @@ public class EditorLayout extends LinearLayout {
 				IdManager.removeId(target, target instanceof ViewGroup);
 				removeViewAttributes(target);
 				removeWidget(target);
-				viewAttributeMap.remove(target);
+			//	viewAttributeMap.remove(target);
 				updateStructure();
 				updateUndoRedoHistory();
 				dialog.dismiss();
@@ -576,6 +576,7 @@ public class EditorLayout extends LinearLayout {
 		
 		final String savedValue = attributeMap.contains(attributeKey) ? attributeMap.getValue(attributeKey) : "";
 		final String defaultValue = currentAttr.containsKey("defaultValue") ? currentAttr.get("defaultValue").toString() : null;
+		final String constant = currentAttr.containsKey("constant") ? currentAttr.get("constant").toString() : null;
 		
 		final Context context = getContext();
 		
@@ -595,7 +596,7 @@ public class EditorLayout extends LinearLayout {
 			break;
 			
 			case "view":
-			dialog = new ViewDialog(context, savedValue);
+			dialog = new ViewDialog(context, savedValue, constant);
 			break;
 			
 			case "boolean":

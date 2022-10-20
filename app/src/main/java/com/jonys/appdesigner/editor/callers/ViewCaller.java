@@ -66,6 +66,26 @@ public class ViewCaller {
 		target.setRotationY(Float.valueOf(value));
 	}
 	
+	public static void setTranslationX(View target, String value, Context context) {
+		target.setTranslationX(DimensionUtil.parse(value, context));
+	}
+	
+	public static void setTranslationY(View target, String value, Context context) {
+		target.setTranslationY(DimensionUtil.parse(value, context));
+	}
+	
+	public static void setTranslationZ(View target, String value, Context context) {
+		target.setTranslationZ(DimensionUtil.parse(value, context));
+	}
+	
+	public static void setScaleX(View target, String value, Context context) {
+		target.setScaleX(Float.valueOf(value));
+	}
+	
+	public static void setScaleY(View target, String value, Context context) {
+		target.setScaleY(Float.valueOf(value));
+	}
+	
 	public static void setPadding(View target, String value, Context context) {
 		int pad = (int) DimensionUtil.parse(value, context);
 		target.setPadding(pad, pad, pad, pad);

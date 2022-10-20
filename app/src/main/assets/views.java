@@ -72,7 +72,13 @@
 	{
 		"name" : "ImageView",
 		"className" : "com.jonys.appdesigner.editor.widgets.ImageViewDesign",
-		"iconName" : "ic_image"
+		"iconName" : "ic_image",
+		"defaultAttributes" :
+		{
+			"android:layout_width" : "25dp",
+			"android:layout_height" : "25dp",
+			"android:src" : "@drawable/default_image"
+		}
 	},
 	
 	{

@@ -20,6 +20,7 @@ import com.jonys.appdesigner.ProjectFile;
 import com.jonys.appdesigner.managers.DrawableManager;
 import com.jonys.appdesigner.databinding.ActivityEditorBinding;
 import com.jonys.appdesigner.databinding.ListViewItemBinding;
+import com.jonys.appdesigner.managers.IdManager;
 import com.jonys.appdesigner.managers.UndoRedoManager;
 import com.jonys.appdesigner.tools.StructureView;
 import com.jonys.appdesigner.tools.XmlLayoutGenerator;
@@ -74,7 +75,6 @@ public class EditorActivity extends BaseActivity {
 		
 		binding.btnOptions.setOnClickListener(v -> showOptions(v));
 		binding.btnMenu.setOnClickListener(v -> binding.drawer.openDrawer(GravityCompat.START));
-		binding.btnStructure.setOnClickListener(v -> binding.drawer.openDrawer(GravityCompat.END));
 		
 		//undo
 		binding.btnUndo.setAlpha(0.5f);
@@ -115,6 +115,8 @@ public class EditorActivity extends BaseActivity {
 		
 		binding.listView.setAdapter(new ListViewAdapter(views));
 		
+		IdManager.clear();
+		
 		if(getIntent().getAction() != null && getIntent().getAction().equals(ACTION_OPEN)) {
 			DrawableManager.loadFromFiles(project.getDrawables());
 			binding.editorLayout.loadLayoutFromParser(project.getLayout());
@@ -148,6 +150,11 @@ public class EditorActivity extends BaseActivity {
 						Intent intent = new Intent(EditorActivity.this, XmlPreviewActivity.class);
 						intent.putExtra(XmlPreviewActivity.EXTRA_KEY_XML, result);
 						startActivity(intent);
+						return true;
+					}
+					
+					case R.id.menu_show_structure: {
+						binding.drawer.openDrawer(GravityCompat.END);
 						return true;
 					}
 					

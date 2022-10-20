@@ -50,12 +50,6 @@
 				android:layout_marginRight="10dp"
                 android:src="@drawable/redo"/>
 				
-			<ImageButton
-                android:id="@+id/btn_structure"
-                style="@style/ToolbarButtonStyle"
-				android:layout_marginRight="10dp"
-                android:src="@drawable/structure"/>
-				
             <ImageButton
                 android:id="@+id/btn_options"
                 style="@style/ToolbarButtonStyle"

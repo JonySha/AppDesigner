@@ -61,21 +61,23 @@ public class AttributeInitializer {
 		String className = attribute.get("className").toString();
 		String attributeName = attribute.get("attributeName").toString();
 		
-		viewAttributeMap.get(target).putValue(attributeName, value);
-		InvokeUtil.invokeMethod(methodName, className, target, value, context);
-		
 		//update ids attributes for all views
 		if(value.startsWith("@+id/") && viewAttributeMap.get(target).contains("android:id")) {
 			for(View view : viewAttributeMap.keySet()) {
 				AttributeMap map = viewAttributeMap.get(view);
 				
 				for(String key : map.keySet()) {
-					if(map.getValue(key).startsWith("@id/")) {
+					String val = map.getValue(key);
+					
+					if(val.startsWith("@id/") && val.equals(viewAttributeMap.get(target).getValue("android:id").replace("+", ""))) {
 						map.putValue(key, value.replace("+", ""));
 					}
 				}
 			}
 		}
+		
+		viewAttributeMap.get(target).putValue(attributeName, value);
+		InvokeUtil.invokeMethod(methodName, className, target, value, context);
 	}
 	
 	public ArrayList<HashMap<String, Object>> getAvailableAttributesForView(final View target) {

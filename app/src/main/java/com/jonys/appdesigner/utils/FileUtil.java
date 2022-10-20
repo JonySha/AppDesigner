@@ -1,9 +1,14 @@
 package com.jonys.appdesigner.utils;
 
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import java.io.ByteArrayOutputStream;
+import java.io.FileDescriptor;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.File;
+import java.io.OutputStream;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -45,6 +50,33 @@ public class FileUtil {
 		
 		return "";
     }
+	
+	public static void copyFileFromAsset(String filename, String outPath, Context context) {
+   	 AssetManager assetManager = context.getAssets();
+
+   	 InputStream in;
+  	  OutputStream out;
+		
+  	  try {
+      	  in = assetManager.open(filename);
+       	 String newFileName = outPath + "/" + filename;
+      	  out = new FileOutputStream(newFileName);
+
+       	 byte[] buffer = new byte[1024];
+       	 int read;
+			
+       	 while ((read = in.read(buffer)) != -1) {
+          	  out.write(buffer, 0, read);
+      	  }
+			
+      	  in.close();
+      	  out.flush();
+      	  out.close();
+   	 } 
+		catch (Exception e) {
+       	 e.printStackTrace();
+    	}
+	}
 	
 	private static void createNewFile(String path) {
         int lastSep = path.lastIndexOf(File.separator);

@@ -2846,7 +2846,6 @@ id btn_menu
 id btn_options
 id btn_redo
 id btn_settings
-id btn_structure
 id btn_undo
 id buttonPanel
 id cache_measures
@@ -3026,6 +3025,7 @@ id menu_delete
 id menu_drawable_manager
 id menu_enable_stroke
 id menu_rename
+id menu_show_structure
 id menu_show_xml
 id message
 id middle
