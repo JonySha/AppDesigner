@@ -12,5 +12,11 @@
         android:name="Save"
 		android:title="Save"
 		android:icon="@drawable/content_save" />
+		
+	<item
+        android:id="@+id/menu_theme"
+        android:name="Editor Theme"
+		android:title="Editor Theme"
+		android:icon="@drawable/palette_outline" />
 
 </menu>

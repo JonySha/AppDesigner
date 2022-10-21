@@ -2,7 +2,7 @@ package com.jonys.appdesigner.managers;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
+import androidx.preference.PreferenceManager;
 
 public class PreferencesManager {
 	

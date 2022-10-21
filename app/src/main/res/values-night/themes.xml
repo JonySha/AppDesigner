@@ -1,8 +1,5 @@
 <resources>
-	<style
-			name="AppTheme"
-			parent="Theme.Material3.Dark.NoActionBar"
-			>
+	<style name="AppTheme" parent="Theme.Material3.Dark.NoActionBar">
 		<item name="colorOnErrorContainer">@color/md_theme_dark_onErrorContainer</item>
 		<item name="colorOnError">@color/md_theme_dark_onError</item>
 		<item name="colorErrorContainer">@color/md_theme_dark_errorContainer</item>
@@ -35,6 +32,7 @@
 
 		<item name="android:fontFamily">@font/josefinsans_regular</item>
 
-		<item name="switchStyle">@style/Widget.Material3.CompoundButton.MaterialSwitch</item>
+		<item name="switchStyle">@style/SwitchStyle</item>
+		<!-- <item name="switchPreferenceStyle">@style/AppTheme.SwitchPreference</item> -->
 	</style>
 </resources>

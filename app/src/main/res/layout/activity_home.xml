@@ -116,14 +116,14 @@
 					android:layout_height="20dp"
 					android:layout_width="20dp"
 					android:src="@drawable/home"
-					android:tint="?attr/colorOnSurface" />
+					android:tint="?attr/colorOnPrimary" />
 
 				<TextView
 					android:layout_height="wrap_content"
 					android:layout_marginLeft="10dp"
 					android:layout_width="wrap_content"
 					android:text="Home"
-					android:textColor="?attr/colorOnSurface"
+					android:textColor="?attr/colorOnPrimary"
 					android:textSize="16sp" />
 
 

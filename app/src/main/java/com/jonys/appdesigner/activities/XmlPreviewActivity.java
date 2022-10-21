@@ -67,7 +67,7 @@ public class XmlPreviewActivity extends BaseActivity {
         editor.setText(getIntent().getStringExtra(EXTRA_KEY_XML));
         editor.setTypefaceText(jetBrainsMono());
         editor.setTypefaceLineNumber(jetBrainsMono());
-        editor.setTextSizePx(prefs.getFloat("editor_font_size", 18.0f));
+        editor.setTextSizePx(prefs.getFloat("editor_font_size", 36.0f));
 
         binding.btnOptions.setOnClickListener(
                 v -> {
@@ -101,6 +101,11 @@ public class XmlPreviewActivity extends BaseActivity {
                                             }
 
                                         case R.id.menu_save:
+                                            {
+                                                return true;
+                                            }
+
+                                        case R.id.menu_theme:
                                             {
                                                 return true;
                                             }
