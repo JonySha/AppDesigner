@@ -1,15 +1,18 @@
 package com.jonys.appdesigner.tools;
 
-import android.view.View;
 import android.content.Context;
-import android.util.AttributeSet;
 import android.graphics.Bitmap;
-import android.graphics.Paint;
 import android.graphics.BitmapFactory;
-import android.graphics.Color;
 import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.graphics.drawable.Drawable;
+import android.util.AttributeSet;
+import android.view.View;
 
+import androidx.core.content.ContextCompat;
+
+import com.jonys.appdesigner.AppUIDesigner;
 import com.jonys.appdesigner.R;
 
 public class ColorView extends View {
@@ -23,7 +26,7 @@ public class ColorView extends View {
     public ColorView(Context context, AttributeSet attrs) {
 		super(context, attrs);
 		
-		transparent = getResources().getDrawable(R.drawable.transparent_background);
+		transparent = ContextCompat.getDrawable(AppUIDesigner.getContext(), R.drawable.transparent_background);
 		
 		colorPaint = new Paint();
 		colorPaint.setARGB(a, r, g, b);
