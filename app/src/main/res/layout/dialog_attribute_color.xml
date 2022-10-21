@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_height="wrap_content"
-    android:layout_width="match_parent">
-    
-    <LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:orientation="vertical">
-		
+
 		<androidx.cardview.widget.CardView
-        android:layout_height="70dp"
-        android:layout_marginBottom="30dp"
-        android:layout_width="match_parent"
-        app:cardCornerRadius="@dimen/cornerLow"
-        app:cardElevation="4dp"
-        app:cardUseCompatPadding="true">
-        
-        <com.jonys.appdesigner.tools.ColorView
-            android:id="@+id/color_preview"
-            android:layout_height="match_parent"
-            android:layout_width="match_parent"/>
-        
-        <TextView
-            android:id="@+id/text_color_preview"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:textSize="16sp"/>
-        
-    
-    </androidx.cardview.widget.CardView>
-    
-    <LinearLayout
-        android:gravity="center_vertical"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent">
-        
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="A:"
-            android:textSize="14sp"/>
-        
-        <SeekBar
-            android:id="@+id/seek_alpha"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-        
-    
-    </LinearLayout>
-    
-    <LinearLayout
-        android:gravity="center_vertical"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent">
-        
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="R:"
-            android:textSize="14sp"/>
-        
-        <SeekBar
-            android:id="@+id/seek_red"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-        
-    
-    </LinearLayout>
-    
-    <LinearLayout
-        android:gravity="center_vertical"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent">
-        
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="G:"
-            android:textSize="14sp"/>
-        
-        <SeekBar
-            android:id="@+id/seek_green"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-        
-    
-    </LinearLayout>
-    
-    <LinearLayout
-        android:gravity="center_vertical"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:layout_width="match_parent">
-        
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="B:"
-            android:textSize="14sp"/>
-        
-        <SeekBar
-            android:id="@+id/seek_blue"
-            android:layout_height="wrap_content"
-            android:layout_width="match_parent"/>
-        
-    
-    </LinearLayout>
-    
-    <include
-        layout="@layout/textinputlayout"/>
-    
+			android:layout_height="70dp"
+			android:layout_marginBottom="30dp"
+			android:layout_width="match_parent"
+			app:cardCornerRadius="@dimen/cornerLow"
+			app:cardElevation="4dp"
+			app:cardUseCompatPadding="true">
+
+			<com.jonys.appdesigner.tools.ColorView
+				android:id="@+id/color_preview"
+				android:layout_height="match_parent"
+				android:layout_width="match_parent" />
+
+			<TextView
+				android:id="@+id/text_color_preview"
+				android:layout_gravity="center"
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:textColor="?attr/colorOnSurface"
+				android:textSize="16sp" />
+
+
+		</androidx.cardview.widget.CardView>
+
+		<LinearLayout
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="A:"
+				android:textSize="14sp" />
+
+			<SeekBar
+				android:id="@+id/seek_alpha"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="R:"
+				android:textSize="14sp" />
+
+			<SeekBar
+				android:id="@+id/seek_red"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="G:"
+				android:textSize="14sp" />
+
+			<SeekBar
+				android:id="@+id/seek_green"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:gravity="center_vertical"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="20dp"
+			android:layout_width="match_parent">
+
+			<TextView
+				android:layout_height="wrap_content"
+				android:layout_width="wrap_content"
+				android:text="B:"
+				android:textSize="14sp" />
+
+			<SeekBar
+				android:id="@+id/seek_blue"
+				android:layout_height="wrap_content"
+				android:layout_width="match_parent" />
+
+
+		</LinearLayout>
+
+		<include
+			layout="@layout/textinputlayout" />
+
 	</LinearLayout>
-		
+
 </ScrollView>

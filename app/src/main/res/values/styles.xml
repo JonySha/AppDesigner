@@ -8,7 +8,7 @@
 		<item name="android:background">?attr/selectableItemBackgroundBorderless</item>
 	</style>
 	
-	<style name="SwitchStyle" parent="Widget.MaterialComponents.CompoundButton.Switch">
+	<style name="SwitchStyle" parent="Widget.Material3.CompoundButton.Switch">
 		<item name="track">@drawable/switch_track</item>
 		<item name="android:thumb">@drawable/switch_thumb</item>
 	</style>
