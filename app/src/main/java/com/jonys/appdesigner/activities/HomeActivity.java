@@ -23,7 +23,7 @@ import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
-import com.itsaky.androidide.logsender.LogSender;
+// import com.itsaky.androidide.logsender.LogSender;
 import com.jonys.appdesigner.ProjectFile;
 import com.jonys.appdesigner.activities.EditorActivity;
 import com.jonys.appdesigner.databinding.ListProjectItemBinding;
@@ -44,7 +44,7 @@ public class HomeActivity extends BaseActivity {
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		LogSender.startLogging(this);
+		// LogSender.startLogging(this);
     	super.onCreate(savedInstanceState);
 		
 		binding = ActivityHomeBinding.inflate(getLayoutInflater());
