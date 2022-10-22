@@ -7,16 +7,13 @@ import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.MenuItem;
 
-import android.widget.ArrayAdapter;
 import androidx.appcompat.view.menu.MenuBuilder;
 import androidx.appcompat.view.menu.MenuPopupHelper;
 import androidx.appcompat.widget.PopupMenu;
 import androidx.preference.PreferenceManager;
 
-import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.snackbar.Snackbar;
 import com.jonys.appdesigner.R;
-import com.jonys.appdesigner.activities.XmlPreviewActivity;
 import com.jonys.appdesigner.databinding.ActivityXmlPreviewBinding;
 
 import io.github.rosemoe.sora.langs.textmate.TextMateColorScheme;
