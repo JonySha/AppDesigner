@@ -2,7 +2,7 @@
 	{
 		"name" : "TextView",
 		"className" : "com.jonys.appdesigner.editor.widgets.TextViewDesign",
-		"iconName" : "ic_text",
+		"iconName" : "ic_textview",
 		"defaultAttributes" : 
 		{
 			"android:text" : "TextView"
@@ -22,7 +22,7 @@
 	{
 		"name" : "Button",
 		"className" : "com.jonys.appdesigner.editor.widgets.ButtonDesign",
-		"iconName" : "ic_button",
+		"iconName" : "ic_button_2",
 		"defaultAttributes" : 
 		{
 			"android:text" : "Button"

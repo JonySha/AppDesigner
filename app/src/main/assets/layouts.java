@@ -2,7 +2,7 @@
 	{
 		"name" : "LinearLayout (H)",
 		"className" : "com.jonys.appdesigner.editor.widgets.LinearLayoutDesign",
-		"iconName" : "ic_linear",
+		"iconName" : "ic_linear_hor",
 		"defaultAttributes" : 
 		{
 			"android:layout_width" : "match_parent",
@@ -14,7 +14,7 @@
 	{
 		"name" : "LinearLayout (V)",
 		"className" : "com.jonys.appdesigner.editor.widgets.LinearLayoutDesign",
-		"iconName" : "ic_linear",
+		"iconName" : "ic_linear_ver",
 		"defaultAttributes" : 
 		{
 			"android:layout_height" : "match_parent",
@@ -48,7 +48,7 @@
 	{
 		"name" : "ConstraintLayout",
 		"className" : "com.jonys.appdesigner.editor.widgets.ConstraintLayoutDesign",
-		"iconName" : "ic_relative",
+		"iconName" : "ic_constraint",
 		"defaultAttributes" :
 		{
 			"android:layout_width" : "match_parent",
