@@ -5,7 +5,10 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.os.Build;
+import android.os.VibrationEffect;
 import android.os.Vibrator;
+import android.os.VibratorManager;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.DragEvent;
@@ -69,6 +72,7 @@ public class EditorLayout extends LinearLayout {
 	private HashMap<String, ArrayList<HashMap<String, Object>>> parentAttributes;
 	
 	private Vibrator vibrator;
+	private VibratorManager vibratorManager;
 	
 	private boolean drawStrokeEnabled = true;
 	
@@ -86,7 +90,7 @@ public class EditorLayout extends LinearLayout {
 			switch(event.getAction()) {
 				case DragEvent.ACTION_DRAG_STARTED: {
 					if(PreferencesManager.isEnabledVibro(getContext())) {
-						vibrator.vibrate(100);
+vibrator.vibrate(VibrationEffect.createOneShot(100, VibrationEffect.DEFAULT_AMPLITUDE));
 					}
 					
 					if(draggedView != null) {
@@ -203,10 +207,16 @@ public class EditorLayout extends LinearLayout {
 		parentAttributes = new Gson().fromJson(FileUtil.readFromAsset("parent_attributes.java", context), new TypeToken<HashMap<String, ArrayList<HashMap<String, Object>>>>(){}.getType());
 		
 		initializer = new AttributeInitializer(context, viewAttributeMap, attributes, parentAttributes);
-		
-		vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
-	}
-	
+
+        vibratorManager =
+                (VibratorManager) context.getSystemService(Context.VIBRATOR_MANAGER_SERVICE);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            vibrator = vibratorManager.getDefaultVibrator();
+        } else {
+            vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
+        }
+    }
+
 	@Override
 	protected void onDraw(Canvas canvas) {
 	    super.onDraw(canvas);
