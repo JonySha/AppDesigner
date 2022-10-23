@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.textfield.TextInputLayout
-	xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	android:id="@+id/textinput_layout"
-	style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
-	android:hint="Enter dimension value"
-	android:layout_height="wrap_content"
-	android:layout_width="match_parent"
-	android:paddingTop="10dp"
-	app:boxCornerRadiusBottomEnd="@dimen/cornerLow"
-	app:boxCornerRadiusBottomStart="@dimen/cornerLow"
-	app:boxCornerRadiusTopEnd="@dimen/cornerLow"
-	app:boxCornerRadiusTopStart="@dimen/cornerLow">
-
-	<com.google.android.material.textfield.TextInputEditText
-		android:id="@+id/textinput_edittext"
-		android:layout_height="wrap_content"
-		android:layout_width="match_parent"
-		android:textSize="16sp" />
-
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/textinput_layout"
+    style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+    android:hint="Enter dimension value"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    app:boxCornerRadiusBottomEnd="@dimen/cornerLow"
+    app:boxCornerRadiusBottomStart="@dimen/cornerLow"
+    app:boxCornerRadiusTopEnd="@dimen/cornerLow"
+    app:boxCornerRadiusTopStart="@dimen/cornerLow"
+    app:boxStrokeErrorColor="?attr/colorError">
+    
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textinput_edittext"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textSize="16sp"/>
+    
 
 </com.google.android.material.textfield.TextInputLayout>
