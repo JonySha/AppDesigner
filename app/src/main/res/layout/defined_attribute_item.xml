@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="?attr/selectableItemBackground"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:orientation="horizontal"
-    android:padding="15dp"
-	android:background="?attr/selectableItemBackground">
+    android:padding="15dp">
     
     <TextView
         android:id="@+id/text_name"
@@ -30,6 +31,7 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:src="@drawable/close"
-		android:tint="?attr/colorOnSurface"/>
+        app:tint="?attr/colorOnSurface"/>
     
+
 </RelativeLayout>

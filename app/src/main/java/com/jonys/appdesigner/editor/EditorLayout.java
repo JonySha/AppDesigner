@@ -1,6 +1,8 @@
 package com.jonys.appdesigner.editor;
 
 import android.animation.LayoutTransition;
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Canvas;
@@ -208,6 +210,8 @@ public class EditorLayout extends LinearLayout {
                 }
             };
 
+    @SuppressLint("NewApi")
+    @TargetApi(31)
     public EditorLayout(Context context, AttributeSet attrs) {
         super(context, attrs);
 
@@ -365,6 +369,7 @@ public class EditorLayout extends LinearLayout {
                     float diffX = 0;
                     float diffY = 0;
 
+                    @SuppressLint("ClickableViewAccessibility")
                     @Override
                     public boolean onTouch(final View v, MotionEvent event) {
                         switch (event.getAction()) {

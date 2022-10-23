@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.activities;
 
+import android.annotation.SuppressLint;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.SharedPreferences;
@@ -77,6 +78,7 @@ public class XmlPreviewActivity extends BaseActivity {
                     popupMenu.setOnMenuItemClickListener(
                             new PopupMenu.OnMenuItemClickListener() {
 
+                                @SuppressLint("NonConstantResourceId")
                                 @Override
                                 public boolean onMenuItemClick(MenuItem item) {
                                     switch (item.getItemId()) {
@@ -110,8 +112,9 @@ public class XmlPreviewActivity extends BaseActivity {
                                     }
                                 }
                             });
-                    if (popupMenu.getMenu() instanceof MenuBuilder) {
 
+                    if (popupMenu.getMenu() instanceof MenuBuilder) {
+                        @SuppressLint("RestrictedApi")
                         MenuPopupHelper helper =
                                 new MenuPopupHelper(this, (MenuBuilder) popupMenu.getMenu(), v);
                         helper.setForceShowIcon(true);
@@ -123,7 +126,7 @@ public class XmlPreviewActivity extends BaseActivity {
 
         binding.btnBack.setOnClickListener(
                 v -> {
-                    prefs.edit().putFloat("editor_font_size", editor.getTextSizePx()).commit();
+                    prefs.edit().putFloat("editor_font_size", editor.getTextSizePx()).apply();
                     super.onBackPressed();
                 });
     }
@@ -170,7 +173,7 @@ public class XmlPreviewActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        prefs.edit().putFloat("editor_font_size", editor.getTextSizePx()).commit();
+        prefs.edit().putFloat("editor_font_size", editor.getTextSizePx()).apply();
         super.onBackPressed();
     }
 }

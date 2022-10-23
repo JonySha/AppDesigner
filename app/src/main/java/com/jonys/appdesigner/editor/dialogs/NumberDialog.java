@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.editor.dialogs;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.Editable;
 import android.text.InputType;
@@ -15,6 +16,7 @@ public class NumberDialog extends AttributeDialog {
 	private TextInputLayout textInputLayout;
 	private TextInputEditText textInputEditText;
 
+    @SuppressLint("InflateParams")
 	public NumberDialog(Context context, String savedValue, String type) {
 		super(context);
 		

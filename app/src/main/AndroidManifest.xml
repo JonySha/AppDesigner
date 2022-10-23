@@ -35,7 +35,7 @@
 			android:name=".activities.XmlPreviewActivity"
 			android:screenOrientation="portrait"
 			android:exported="true"
-			android:configChanges="keyboardHidden|screenSize"
+			android:configChanges="keyboardHidden|screenSize|uiMode"
 			android:windowSoftInputMode="adjustResize"/>
 			
 		<activity

@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.editor.dialogs;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.text.Editable;
@@ -29,6 +30,7 @@ public class ColorDialog extends AttributeDialog implements SeekBar.OnSeekBarCha
     private TextInputLayout inputLayout;
     private TextInputEditText editText;
 
+    @SuppressLint("InflateParams")
     public ColorDialog(Context context, String savedValue) {
         super(context);
 
@@ -136,6 +138,7 @@ public class ColorDialog extends AttributeDialog implements SeekBar.OnSeekBarCha
         editText.setText(colorPreview.getHexColor());
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onProgressChanged(SeekBar seek, int progress, boolean fromUser) {
         if (fromUser) {

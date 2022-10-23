@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.utils;
 
+import android.annotation.SuppressLint;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import java.io.ByteArrayOutputStream;
@@ -315,6 +316,7 @@ public class FileUtil {
         return null;
     }
 	
+    @SuppressLint("Recycle")
 	private static String getDataColumn(Context context, Uri uri, String selection, String[] selectionArgs) {
         final String column = MediaStore.Images.Media.DATA;
         final String[] projection = {

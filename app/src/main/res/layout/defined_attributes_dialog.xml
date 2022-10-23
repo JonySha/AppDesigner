@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:gravity="center_horizontal"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-	android:background="?attr/colorSurface">
+    android:orientation="vertical">
     
     <LinearLayout
         android:gravity="center_vertical"
@@ -21,7 +21,7 @@
             android:id="@+id/widget_name"
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:text="LinearLayout"
             android:textColor="?attr/colorOnSurface"
             android:textSize="20sp"/>
@@ -29,16 +29,16 @@
         <ImageButton
             android:id="@+id/btn_add"
             style="@style/ToolbarButtonStyle"
-			android:layout_marginLeft="10dp"
-			android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:src="@drawable/plus"
-            android:tint="?attr/colorPrimary"/>
+            app:tint="?attr/colorPrimary"/>
         
         <ImageButton
             android:id="@+id/btn_delete"
             style="@style/ToolbarButtonStyle"
             android:src="@drawable/delete"
-            android:tint="?attr/colorPrimary"/>
+            app:tint="?attr/colorPrimary"/>
         
     
     </LinearLayout>
@@ -49,10 +49,11 @@
         android:layout_width="match_parent"/>
     
     <ListView
+        android:divider="@null"
         android:id="@+id/listView"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-		android:divider="@null"
-		android:nestedScrollingEnabled="true"/>
+        android:nestedScrollingEnabled="true"/>
     
+
 </LinearLayout>

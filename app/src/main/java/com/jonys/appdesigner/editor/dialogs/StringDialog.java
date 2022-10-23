@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.editor.dialogs;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 
@@ -12,6 +13,7 @@ public class StringDialog extends AttributeDialog {
 	private TextInputLayout textInputLayout;
 	private TextInputEditText textInputEditText;
 	
+    @SuppressLint("InflateParams")
 	public StringDialog(Context context, String savedValue) {
 		super(context);
 		

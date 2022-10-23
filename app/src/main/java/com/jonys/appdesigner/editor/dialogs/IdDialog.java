@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.editor.dialogs;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -21,6 +22,7 @@ public class IdDialog extends AttributeDialog {
 	
 	private ArrayList<String> ids;
 	
+    @SuppressLint("InflateParams")
 	public IdDialog(Context context, String savedValue) {
 		super(context);
 		

@@ -1,5 +1,6 @@
 package com.jonys.appdesigner;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -8,6 +9,7 @@ import androidx.preference.PreferenceManager;
 
 public class AppUIDesigner extends Application {
 
+    @SuppressLint("StaticFieldLeak")
     private static Context ctx;
 	private static SharedPreferences prefs;
 

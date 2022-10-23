@@ -1,6 +1,7 @@
 package com.jonys.appdesigner.editor.dialogs;
 
 import android.animation.LayoutTransition;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.Editable;
 import android.text.InputType;
@@ -24,6 +25,7 @@ public class SizeDialog extends AttributeDialog {
 	
 	private RadioGroup group;
 	
+    @SuppressLint("InflateParams")
 	public SizeDialog(Context context, String savedValue) {
 		super(context);
 		
@@ -105,6 +107,7 @@ public class SizeDialog extends AttributeDialog {
 		}
 	}
 	
+    @SuppressLint("NonConstantResourceId")
 	@Override
 	protected void onClickSave() {
 	    String value = "";

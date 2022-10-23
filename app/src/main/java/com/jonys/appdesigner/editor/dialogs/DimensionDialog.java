@@ -1,5 +1,6 @@
 package com.jonys.appdesigner.editor.dialogs;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.text.Editable;
 import android.text.InputType;
@@ -18,6 +19,7 @@ public class DimensionDialog extends AttributeDialog {
 	
 	private String unit;
 	
+    @SuppressLint("InflateParams")
 	public DimensionDialog(Context context, String savedValue, String unit) {
 		super(context);
 		
